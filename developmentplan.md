@@ -1,0 +1,3 @@
+## Development Plan
+
+For my application I have chosen to create a text-based adventure game. The application will provide users with multiple choices and the user will have to navigate to the end of the story. It will give users an entertaining and fun interaction with Python and further showcases the  limitless things you can do  with pythons tools. The main problem it will solve is curing boredome for any user that plays it, the simplicity and non-complicated aspects allows it to be played by any audience. Although, because games are normally played by a younger generation, this is the demographic it will target to mostly. 
