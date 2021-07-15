@@ -14,6 +14,19 @@ def player_loss():
     except KeyboardInterrupt:
         print("Goodbye...For now")
 
+def player_win():
+    try:
+        print("\a CONGRATS YOU HAVE WON!")
+        start_game = input("If you wish to play again, press Y to restart: ")
+        while start_game != "Y" and start_game != "y":
+            print("Please enter Y if you wish to restart!")
+            start_game = input("Do you dare play again? Enter Y: ")
+        if start_game == "Y" or "y":
+            intro()
+    except KeyboardInterrupt:
+        print("Goodbye...For now")
+
+
 def intro():
     print("A large knock throws you from your slumber")
     time.sleep(3)
@@ -99,7 +112,7 @@ def guard_path():
     time.sleep(4)
     print("All of a sudden a guard emerges from one of the rooms and faces you in a concerned fasion")
     time.sleep(4)
-    guard = "'You finally made it! I was hoping you would see the door I left open for you. Come on lets get you out of here\n'"
+    guard = "'You finally made it! I was hoping you would see the door I left open for you. Come on lets get you out of here'\n"
     for char in guard:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -117,9 +130,7 @@ def guard_path():
         sys.stdout.flush()
         time.sleep(0.1)
     time.sleep(2)
-    print("ye")
-    
-    #player_win()
+    player_win()
 
 def start():
     try:
