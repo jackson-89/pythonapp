@@ -1,6 +1,19 @@
 import time
 import sys
 
+
+def player_loss():
+    try:
+        print("YOU HAVE LOST!")
+        start_game = input("If you wish to play again, press Y to restart: ")
+        while start_game != "Y" and start_game != "y":
+            print("Please enter Y if you wish to restart!")
+            start_game = input("Do you dare try again? Enter Y: ")
+        if start_game == "Y" or "y":
+            intro()
+    except KeyboardInterrupt:
+        print("Goodbye...For now")
+
 def intro():
     print("A large knock throws you from your slumber")
     time.sleep(3)
@@ -57,7 +70,7 @@ def warden_path():
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.1)
-    #player_loss()
+    player_loss()
     
 
 def cafeteria_path():
@@ -73,7 +86,7 @@ def start():
         start_game = input("Do you dare to play? Press Y to start: ")
         while start_game != "Y" and start_game != "y":
             print("Please enter Y if you want to continue!")
-            start_game = input("Do you dare to continue? (Y/N): ")
+            start_game = input("Do you dare to continue? Enter Y: ")
         if start_game == "Y" or "y":
             intro()
     except KeyboardInterrupt:
