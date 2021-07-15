@@ -39,7 +39,8 @@ def first_choice():
         b) Towards the prison cafeteria
         c) Towards the guard bunkers\n''')
         
-        user_choice = input("Enter your option: ")
+        user_choice = input("Enter your option (a/b/c): ")
+        print(f"You have chosen {user_choice}")
         
         if user_choice == list_of_paths[0]:
             warden_path()
@@ -53,19 +54,18 @@ def warden_path():
     time.sleep(3)
     print("You slither through the darkness, avoiding all light sources that attempt to alert your presence")
     time.sleep(3)
-    print("You stop at a big wooden door that is notorious for being the wardens bunker and you enter")
+    print("You stop at a big wooden door that is notorious for being the wardens bunker and you enter...")
     time.sleep(3)
     print("You open the door to a half-asleep warden clutching a shotgun pointed straight towards you!")
     time.sleep(3)
-    warden = 'How did you get out of your cell! Darn prison rat Ill show you!\n'
+    warden = '\'How did you get out of your cell! Darn prison rat! Ill show you!\n\''
     for char in warden:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.1)
-    time.sleep(1)
     print("(\aBANG!)\n The warden fires the shotgun straight at you, knocking you to the ground")
     time.sleep(2)
-    warden2 = "Should've stayed in your cell...\n"
+    warden2 = "'Should've stayed in your cell...'\n"
     for char in warden2:
         sys.stdout.write(char)
         sys.stdout.flush()
