@@ -4,7 +4,7 @@ For my application I have chosen to create a text-based adventure game named "Es
 
 ## **List of features:**
 
-### 1. _**A while loop for input validation:**_  
+### 1. _**A while loop for the starter input validation:**_  
 At the very start of the application I decided to create a while loop that keeps asking the player if they want to start the game until they type Y or y. I made this feature because I believe it is a suitable input feature for the start of any game. I have also turned this feature into a function as I will be utilising it with the win and loss feature and this makes it easier to call it.
 
 **User interaction and Experience:**
@@ -14,7 +14,7 @@ The user will find out how to use this feature because it gives clear instructio
 Throughout the whole application I have integrated print statements that are used to show the user what is happening in the story, what choices they can make and also used to show dialogue from different characters. 
 
 **User interaction and Experience:**
-The user will interact with this feature by reading what the application is telling them. Throughout the application I have used the "time" module between each line of text. I have done this because it adds to the user experience by reading out the text line for line without having all the text dumped into one big block. This is done by adding a small 2 or 3 second delay between each line of text. This allows for easier reading and increases the suspense of the game. The dialogue I have implemented also utilises the time module however I have used a for loop to read out the dialogue letter by letter. I used this because it distinguishes dialogue from normal text and also allows for a more realistic showcase of dialogue, instead of a full line of text it prints it out one by one, essentially like hearing it in real time. I have also turned all the segments of text into functions, I have done this because it allows me to fluently link the different choices together and overall connects the application into one big block.
+The user will interact with this feature by reading what the application is telling them. Throughout the application I have used the "time" module between each line of text. I have done this because it adds to the user experience by reading out the text line for line without having all the text dumped into one big block. This is done by adding a small 2 or 3 second delay between each line of text. This allows for easier reading and increases the suspense of the game. The dialogue I have implemented also utilises the time module however I have used a 'for' loop to read out the dialogue letter by letter to the user. I used this because it distinguishes dialogue from normal text and also allows for a more realistic showcase of dialogue, instead of a full line of text it prints it out one by one, essentially like hearing it in real time. I have also turned all the segments of text into functions, I have done this because it allows me to fluently link the different choices together and overall connects the application into one big block. I have also added a \a statement in some parts to replicate the bang sounds, this is to add more flare to the application and give players a more interactice experience.
 
 
 

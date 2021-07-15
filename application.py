@@ -74,7 +74,23 @@ def warden_path():
     
 
 def cafeteria_path():
-    print("cafeteria")
+    print("You make your way towards the place you have spent countless hours devouring vile portions of questionable foods")
+    time.sleep(4)
+    print("You enter the cafeteria entrance and you are welcomed with a horrid smell of rotten milk and raw meat")
+    time.sleep(4)
+    print("You wander inside carefully and you suddenly see another prisoner sitting down, eating a bowl of food!")
+    time.sleep(4)
+    print("He notices you and stands up immediately")
+    time.sleep(3)
+    prisoner = "'Stop! You don't have permission to be out of your cell! Guards help!'\n"
+    for char in prisoner:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    time.sleep(2)
+    print("The prisoners shouting has alerted the guards and a pack of them ambush the cafeteria, tackling you to the ground")
+    time.sleep(4)
+    player_loss()
 
 def guard_path():
     print("guard")
