@@ -4,7 +4,7 @@ import sys
 
 def player_loss():
     try:
-        print("YOU HAVE LOST!")
+        print("\aYOU HAVE LOST!")
         start_game = input("If you wish to play again, press Y to restart: ")
         while start_game != "Y" and start_game != "y":
             print("Please enter Y if you wish to restart!")
@@ -18,15 +18,15 @@ def intro():
     print("A large knock throws you from your slumber")
     time.sleep(3)
     print("\a(BANG!)\nYou jolt awake and scan around the dark room you lay in")
-    time.sleep(3)
-    print("The dark prison room bears nothing but a mouldy bed, a sad little bench and a --- you notice something off")
-    time.sleep(3)
+    time.sleep(2)
+    print("The dark prison room bares nothing but a mouldy bed, a sad little bench and a --- you notice something off")
+    time.sleep(4)
     print("The doors for the room has been left open! The large knock was the sound of it loosley slamming")
-    time.sleep(3)
+    time.sleep(4)
     print("This is the moment you have been waiting for, you will not get another oppurtunity like this to escape! ")
-    time.sleep(3)
-    print("You sneak through the gate and make your way up to the hallway where you are met with three different paths")
-    time.sleep(3)
+    time.sleep(4)
+    print("You sneak through the gate and make your way up to the hallway where you are met with three different paths...")
+    time.sleep(5)
     print("")
     first_choice()
 
@@ -88,12 +88,38 @@ def cafeteria_path():
         sys.stdout.flush()
         time.sleep(0.1)
     time.sleep(2)
-    print("The prisoners shouting has alerted the guards and a pack of them ambush the cafeteria, tackling you to the ground")
+    print("The prisoner's shouting has alerted the guards and a pack of them ambush the cafeteria, tackling you to the ground")
     time.sleep(4)
     player_loss()
 
 def guard_path():
-    print("guard")
+    print("You stupidly creep down the corridor towards the most dangerous part of the prison, the guard bunkers")
+    time.sleep(4)
+    print("As you approach you hear the snoring and rustling of unconcious guards catching some shut eye, you are terrified")
+    time.sleep(4)
+    print("All of a sudden a guard emerges from one of the rooms and faces you in a concerned fasion")
+    time.sleep(4)
+    guard = "'You finally made it! I was hoping you would see the door I left open for you. Come on lets get you out of here\n'"
+    for char in guard:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    time.sleep(2)
+    print("Someone is looking out for you it seems! The guard smuggles you out of the prison and you make a run for it.... ")
+    time.sleep(2)
+    print("")
+    time.sleep(2)
+    print("")
+    time.sleep(2)
+    end_quote = "...and you don't look back.\n"
+    for char in end_quote:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    time.sleep(2)
+    print("ye")
+    
+    #player_win()
 
 def start():
     try:
@@ -102,7 +128,7 @@ def start():
         start_game = input("Do you dare to play? Press Y to start: ")
         while start_game != "Y" and start_game != "y":
             print("Please enter Y if you want to continue!")
-            start_game = input("Do you dare to continue? Enter Y: ")
+            start_game = input("Do you wish to play? Enter Y: ")
         if start_game == "Y" or "y":
             intro()
     except KeyboardInterrupt:
