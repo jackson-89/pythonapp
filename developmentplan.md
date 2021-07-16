@@ -1,5 +1,7 @@
 # **Development Plan - Python Terminal Application**
 
+## **Software Development Plan**
+
 For my application I have chosen to create a text-based adventure game named "Escape From the Depths". The application will provide users with multiple choices and the user will have to navigate to the end of the story, ending up as a win or a loss depending on the users choices. The applications main intent is to give users an exciting and suspensful experience. It will give users an entertaining and fun interaction with Python and further showcases the  limitless things you can do with pythons tools. The main problem it will solve is curing boredome for any user that plays it, the simplicity and non-complicated aspects allows it to be played by any audience. Although, because games are normally played by a younger generation, this is the demographic it will target to mostly. It gives the intended audience a relaxed and entertaining break from the stresses of real life and gives them a fun experience. 
 
 ## **List of features:**
@@ -29,3 +31,23 @@ Another set of features I have added is a function that runs when the player win
 
 **User interaction and Experience:**
 The user will interact with this feature by entering the correct key if  they wish to restart the game. The loss and win feature tells the user what to do and will only continue if they enter the letter y. This is a form of error handling I have used so that the application doesn't throw an exception if they enter the wrong key. Although if the user does select the wrong key I have programmed it to show a different message that should be more concise to the user.
+
+## **Flow Diagram for the Application**
+
+![flow-diagram](appflowdia.PNG)
+
+## **Implementation Plan**
+
+**How the features will be implemented:**
+
+* Starting input validation feature: This will be turned into a function to make it easy to call within the program.
+* Text and Dialogue Feature: This will consist of a few different functions that will all connect to eachother. It will also consist of elements from the time and sys module that will be imported.
+* User choice feature: This will be turned into a function to enable fluency within the program. It will also consist of imports from the time module.
+* Player Win/Lose Feature: This will be two seperate but similar features that are functions so they can be run at their specified time in the program.
+
+**Priority for each feature:**
+
+1.  User choice feature MVP - This is because this is the most intricate feature that contains the most coding (Functions, loops, variables, strings etc)
+2. Text and Dialogue Feature - This is the second most important because it will take up a lot of time planning out the plot and purpose of the game, so it is good to finish it earlier rather than later.
+3. Starting input validation feature - This is the third most important because as much as it is important, I don't believe it will be too time consuming.
+4. Player Win/Lose Feature: This is last on the priority list because it is not too important for the application functionality but is a useful feature that will be added. It also is one of the features that requires most of the other features to be made first.
