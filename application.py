@@ -2,7 +2,7 @@ import time
 import sys
 
 
-def player_loss():
+def player_loss(): #This is a feature that runs if the player loses the game
     try:
         print("\aYOU HAVE LOST!")
         start_game = input("If you wish to play again, press Y to restart: ")
@@ -14,7 +14,7 @@ def player_loss():
     except KeyboardInterrupt:
         print("Goodbye...For now")
 
-def player_win():
+def player_win(): #This is a feature that runs when the player wins the game
     try:
         print("\a CONGRATS YOU HAVE WON!")
         start_game = input("If you wish to play again, press Y to restart: ")
@@ -27,14 +27,14 @@ def player_win():
         print("Goodbye...For now")
 
 
-def intro():
-    print("A large knock throws you from your slumber")
+def intro(): #This is the first bit of the game, the intro text
+    print("A large knock throws you from your slumber.")
     time.sleep(3)
-    print("\a(BANG!)\nYou jolt awake and scan around the dark room you lay in")
+    print("\a(BANG!)\nYou jolt awake and scan around the dark room you lay in.")
     time.sleep(2)
-    print("The dark prison room bares nothing but a mouldy bed, a sad little bench and a --- you notice something off")
+    print("The dark prison room bares nothing but a mouldy bed, a sad little bench and a --- you notice something off.")
     time.sleep(4)
-    print("The doors for the room has been left open! The large knock was the sound of it loosley slamming")
+    print("The doors for the room have been left open! The large knock was the sound of it loosly slamming.")
     time.sleep(4)
     print("This is the moment you have been waiting for, you will not get another oppurtunity like this to escape! ")
     time.sleep(4)
@@ -43,14 +43,14 @@ def intro():
     print("")
     first_choice()
 
-def first_choice():
+def first_choice(): #This is a feature that asks the user for input and redirects them to the chosen function
     list_of_paths = ["a","b","c"]
     user_choice = ""
     while user_choice not in list_of_paths:
         print(''' Here are the different paths you can take:
-        a) Towards the wardens room
-        b) Towards the prison cafeteria
-        c) Towards the guard bunkers\n''')
+        a) Head towards the warden's room
+        b) Head towards the prison cafeteria
+        c) Head towards the guard bunkers\n''')
         
         user_choice = input("Enter your option (a/b/c): ")
         print(f"You have chosen {user_choice}")
@@ -62,7 +62,7 @@ def first_choice():
         elif user_choice == list_of_paths[2]:
             guard_path()
 
-def warden_path():
+def warden_path(): #This is the feature that users will be led to if they selected "a" in first_choice()
     print("You make your way anxiously to the bowels of the prison, towards the behemoth himself...")
     time.sleep(3)
     print("You slither through the darkness, avoiding all light sources that attempt to alert your presence")
@@ -86,7 +86,7 @@ def warden_path():
     player_loss()
     
 
-def cafeteria_path():
+def cafeteria_path(): #This is the feature that users will be led to if they selected "b" in first_choice()
     print("You make your way towards the place you have spent countless hours devouring vile portions of questionable foods")
     time.sleep(4)
     print("You enter the cafeteria entrance and you are welcomed with a horrid smell of rotten milk and raw meat")
@@ -105,7 +105,7 @@ def cafeteria_path():
     time.sleep(4)
     player_loss()
 
-def guard_path():
+def guard_path(): #This is the feature that users will be led to if they selected "c" in first_choice()
     print("You stupidly creep down the corridor towards the most dangerous part of the prison, the guard bunkers")
     time.sleep(4)
     print("As you approach you hear the snoring and rustling of unconcious guards catching some shut eye, you are terrified")
@@ -132,7 +132,7 @@ def guard_path():
     time.sleep(2)
     player_win()
 
-def start():
+def start(): #This is the first feature users will see, an input validation to start the game
     try:
         print("Welcome to 'Escape the Depths', a text-based survival game made with Python")
         print("In this game you will be tasked to escape a dark prison and fight for your freedom")
