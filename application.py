@@ -53,17 +53,15 @@ def first_choice(): #This is a feature that asks the user for input and redirect
         c) Head towards the guard bunkers\n''')
         
         user_choice = input("Enter your option (a/b/c): ")
-        if user_choice in list_of_paths:
-            print(f"You have chosen {user_choice}")
-        elif user_choice not in list_of_paths:
-            print("That is not a valid selection!")
         
-        elif user_choice == list_of_paths[0]:
-            warden_path()
-        elif user_choice == list_of_paths[1]:
-            cafeteria_path()
-        elif user_choice == list_of_paths[2]:
-            guard_path()
+    print(f"You have chosen {user_choice}")
+
+    if user_choice == list_of_paths[0]:
+        warden_path()
+    elif user_choice == list_of_paths[1]:
+        cafeteria_path()
+    elif user_choice == list_of_paths[2]:
+        guard_path()
 
 def warden_path(): #This is the feature that users will be led to if they selected "a" in first_choice()
     print("You make your way anxiously to the bowels of the prison, towards the behemoth himself...")

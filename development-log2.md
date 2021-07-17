@@ -1,3 +1,0 @@
-# Development Log 2 - 16/07/21
-
-The application is coming together quite well so far, I have constructed most of the code and features and am now focusing on getting the documentation finished. I haven't came across too many problems so far however the bash scripting and testing I may need to do a bit more research on when I come around to it. So far I'm confident that I will finish the assignment on time and cover every aspect. I am excited to see the full application with the completed documentation and I am happy with the product so far. One main struggle I had was getting the 'for' loop to work precisely but with a bit of research I ended up figuring it out and getting it to work properly.
