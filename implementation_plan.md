@@ -13,3 +13,13 @@
 2. Text and Dialogue Feature - This is the second most important because it will take up a lot of time planning out the plot and purpose of the game, so it is good to finish it earlier rather than later.
 3. Starting input validation feature - This is the third most important because as much as it is important, I don't believe it will be too time consuming.
 4. Player Win/Lose Feature: This is last on the priority list because it is not too important for the application functionality but is a useful feature that will be added. It also is one of the features that requires most of the other features to be made first.
+
+## Trello Board
+
+Color coding for importance:\
+Red - MVP\
+Orange - 2nd most important to complete \
+Yellow - 3rd most important to complete \
+Green - Least important to complete
+
+![trello_board](trello.PNG)
